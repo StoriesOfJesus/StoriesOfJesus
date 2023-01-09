@@ -51,6 +51,7 @@
  *
  * This jQuery plugin will only run on devices running Mobile Webkit based browsers (iOS 2.0+, android 2.2+)
  */
+let isPlayingMusic = false;
 (function($) 
 {
 	
@@ -137,7 +138,14 @@
 			* Stops the default click event from triggering and stores where we touched
 			*/
 			function touchStart(event) 
-			{	
+			{
+				if (!isPlayingMusic) {
+					console.log(isPlayingMusic);
+					isPlayingMusic = true;
+					console.log(isPlayingMusic);
+					console.log("playing music")
+					// TODO play music
+				}
 				var evt = hasTouch ? event.touches[0] : event; 
 				
 				phase = PHASE_START;
