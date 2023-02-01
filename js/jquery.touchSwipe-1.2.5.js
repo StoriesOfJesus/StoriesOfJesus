@@ -131,8 +131,8 @@ let isPlayingMusic = false;
 			var end={x:0, y:0};
 			var delta={x:0, y:0};
 			// added by Codrops
-			var lastPositionX = 0; 
-			
+			var lastPositionX = 0;
+
 			/**
 			* Event handler for a touch start event. 
 			* Stops the default click event from triggering and stores where we touched
@@ -145,6 +145,8 @@ let isPlayingMusic = false;
 					console.log(isPlayingMusic);
 					console.log("playing music")
 					// TODO play music
+					let player = $("#audio-player").get(0);
+					player.play();
 				}
 				var evt = hasTouch ? event.touches[0] : event; 
 				
