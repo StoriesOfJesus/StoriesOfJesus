@@ -250,6 +250,13 @@ a.f-ref{
 	background-position: top center;
 	background-size: cover;
 }
+.img-cont-9{
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
 .img-cont-1{
 	height: 40%;
 	width: 100%;
@@ -281,6 +288,9 @@ a.f-ref{
 }
 .img-8{
 	background-image: url(../images/8.jpg);
+}
+.img-9{
+	background-image: url(../images/9.jpg);
 }
 .box h3{
 	padding: 10px 0px;
